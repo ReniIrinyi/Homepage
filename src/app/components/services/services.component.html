@@ -1,0 +1,14 @@
+<h1>We offer high demand services</h1>
+<div class="services-container" id="services">
+  <ng-container *ngFor="let service of services">
+    <div class="service">
+      <div class="service-content">
+        <fa-icon class="svg svg--{{ service.id }}" [icon]="icons[service.id]">
+        </fa-icon>
+        <h2>{{ service.service }}</h2>
+        <p>{{ service.description }}</p>
+        <input type="button" class="button" value="Get stated" />
+      </div>
+    </div>
+  </ng-container>
+</div>

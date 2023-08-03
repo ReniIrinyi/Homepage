@@ -1,0 +1,124 @@
+@import "../../../styles.scss";
+.products-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-bottom: 5rem;
+  @include respond(small-phone) {
+    padding-bottom: 0;
+  }
+  @include respond(small-phone, landscape) {
+    padding-bottom: 0;
+  }
+  @include respond(medium-phone) {
+    padding-bottom: 0;
+  }
+  @include respond(large-phone) {
+    padding-bottom: 0;
+  }
+  & h1 {
+    @include font-size-big;
+    width: 35%;
+    line-height: 1.4;
+    @include respond(small-phone) {
+      width: 90%;
+    }
+    @include respond(small-phone, landscape) {
+      width: 90%;
+    }
+    @include respond(medium-phone) {
+      width: 90%;
+    }
+    @include respond(large-phone) {
+      width: 90%;
+    }
+  }
+}
+
+.products-content {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  padding-bottom: 3rem;
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  @include respond(small-phone, landscape) {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  @include respond(medium-phone) {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  @include respond(medium-phone, landscape) {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+  @include respond(large-phone) {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0.5rem;
+
+  & img {
+    border-radius: 24px;
+    max-width: 100%;
+  }
+
+  & p {
+    @include font-size-tiny(300);
+    padding: 1rem 0;
+  }
+
+  & h2 {
+    @include font-size-medium(500);
+  }
+}
+
+.product:nth-child(odd) {
+  transform: translateY(20%);
+  @include respond(small-phone) {
+    transform: translateY(0);
+  }
+  @include respond(small-phone, landscape) {
+    transform: translateY(0);
+  }
+  @include respond(medium-phone) {
+    transform: translateY(0);
+  }
+  @include respond(large-phone) {
+    transform: translateY(0);
+  }
+}
+.link {
+  display: flex;
+  align-self: flex-end;
+  right: 0;
+  text-decoration: none;
+  @include font-size-small-color(#2d9cdb, 500);
+  cursor: pointer;
+  transition: all 0.5s;
+  @include respond(small-phone) {
+    align-self: flex-start;
+  }
+  @include respond(small-phone, landscape) {
+    align-self: flex-start;
+  }
+  @include respond(medium-phone) {
+    align-self: flex-start;
+  }
+  @include respond(large-phone) {
+    align-self: flex-start;
+  }
+}
+
+.link:hover {
+  color: #828282;
+}

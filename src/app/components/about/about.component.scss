@@ -1,0 +1,125 @@
+@import "../../../styles.scss";
+
+.about-container {
+  padding: 10rem 0 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
+    padding: 5rem 0 5rem 0;
+  }
+  @include respond(small-phone, landscape) {
+    grid-template-columns: 1fr;
+    padding: 5rem 0 5rem 0;
+  }
+  @include respond(medium-phone) {
+    grid-template-columns: 1fr;
+    padding: 5rem 0 5rem 0;
+  }
+  @include respond(large-phone) {
+    grid-template-columns: 1fr;
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  &-content {
+    width: 50%;
+    @include respond(small-phone) {
+      width: 70%;
+    }
+    @include respond(small-phone, landscape) {
+      width: 70%;
+    }
+    @include respond(medium-phone) {
+      width: 70%;
+    }
+    @include respond(large-phone) {
+      width: 70%;
+    }
+    & h3 {
+      padding: 1rem 0 1rem 0;
+      @include font-size-small-color(#eb5757, 500);
+    }
+
+    & h1 {
+      @include font-size-big;
+      line-height: 1.4;
+    }
+
+    & p {
+      @include font-size-small(400);
+      padding: 1rem 0 1rem 0;
+    }
+  }
+}
+
+.right {
+  display: flex;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    @include respond(small-phone) {
+      grid-gap: 0.5rem;
+    }
+    @include respond(small-phone, landscape) {
+      grid-gap: 0.5rem;
+    }
+    @include respond(medium-phone) {
+      grid-gap: 0.5rem;
+    }
+    @include respond(large-phone) {
+      grid-gap: 0.5rem;
+    }
+    & img {
+      display: flex;
+      width: 15rem;
+      border-radius: 24px;
+      @include respond(small-phone) {
+        width: 10rem;
+      }
+      @include respond(small-phone, landscape) {
+        width: 10rem;
+      }
+      @include respond(medium-phone) {
+        width: 10rem;
+      }
+      @include respond(large-phone) {
+        width: 10rem;
+      }
+    }
+
+    & img:nth-of-type(3) {
+      grid-column: 2 / -2;
+    }
+    & img:nth-of-type(2) {
+      width: 14rem;
+      align-self: flex-end;
+      @include respond(small-phone) {
+        width: 9rem;
+      }
+      @include respond(small-phone, landscape) {
+        width: 9rem;
+      }
+      @include respond(medium-phone) {
+        width: 9rem;
+      }
+      @include respond(large-phone) {
+        width: 9rem;
+      }
+    }
+    & img:nth-of-type(1) {
+      grid-row: 1 / span -3;
+      transform: translateY(50%);
+    }
+  }
+}

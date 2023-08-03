@@ -1,0 +1,110 @@
+@import "../../../styles.scss";
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+  @include respond(small-phone) {
+    padding: 1rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding: 1rem;
+  }
+}
+h1 {
+  @include logo;
+}
+
+.links {
+  transition: all 1s;
+  @include respond(small-phone) {
+    @include linkColumn;
+  }
+  @include respond(small-phone, landscape) {
+    @include linkColumn;
+  }
+  @include respond(medium-phone) {
+    @include linkColumn;
+  }
+  @include respond(large-phone) {
+    @include linkColumn;
+  }
+}
+fa-icon {
+  transition: all 1s;
+  z-index: 10;
+  cursor: pointer;
+}
+fa-icon:hover {
+  transform: scale(1.2);
+}
+ul {
+  display: flex;
+  flex-direction: row;
+
+  @include respond(small-phone) {
+    flex-direction: column;
+  }
+  @include respond(small-phone, landscape) {
+    flex-direction: column;
+  }
+  @include respond(medium-phone) {
+    flex-direction: column;
+  }
+  @include respond(large-phone) {
+    flex-direction: column;
+  }
+
+  & li a:hover {
+    color: #8e8d8d;
+  }
+
+  & li {
+    @include respond(small-phone) {
+      padding-top: 5rem;
+    }
+    @include respond(small-phone, landscape) {
+      padding-top: 5rem;
+    }
+    @include respond(medium-phone) {
+      padding-top: 5rem;
+    }
+    @include respond(large-phone) {
+      padding-top: 5rem;
+    }
+  }
+  & li:not(:nth-of-type(1)) {
+    padding-left: 4rem;
+
+    @include respond(small-phone) {
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+    @include respond(small-phone, landscape) {
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+    @include respond(medium-phone) {
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+    @include respond(large-phone) {
+      padding-top: 2rem;
+      padding-left: 0;
+    }
+  }
+
+  & a {
+    transition: all 0.5s;
+    text-decoration: none;
+    @include font-size-small-color(#333, 500);
+  }
+}
+
+.transformX {
+  transform: translateX(300%);
+  opacity: 0;
+}

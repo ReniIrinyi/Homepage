@@ -1,0 +1,114 @@
+@mixin button-hover {
+  background: #2d9cdb;
+  color: #fff;
+}
+
+@mixin logo {
+  font-family: "Heebo", sans-serif;
+  @include font-size-big;
+  font-weight: 800;
+}
+
+@mixin button-hover-inverse {
+  background-color: #e0e0e0;
+  color: #828282;
+}
+
+@mixin button($bacground-color, $color) {
+  background-color: $bacground-color;
+  color: $color;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+}
+@mixin linkColumn {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #ffffffce;
+  z-index: 8;
+  justify-content: center;
+}
+@mixin font-size-xxl {
+  font-family: inherit;
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+
+  @include respond(tablet) {
+    font-size: 48px;
+  }
+
+  @include respond(tablet, landscape) {
+    font-size: 48px;
+  }
+
+  @include respond(desktop) {
+    font-size: 48px;
+  }
+}
+@mixin font-size-big {
+  font-family: inherit;
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+
+  @include respond(tablet) {
+    font-size: 36px;
+  }
+
+  @include respond(tablet, landscape) {
+    font-size: 36px;
+  }
+
+  @include respond(desktop) {
+    font-size: 36px;
+  }
+}
+
+@mixin font-size-medium($font-weight) {
+  font-family: inherit;
+  font-size: 24px;
+  color: #333;
+  font-weight: $font-weight;
+}
+
+@mixin font-size-small-color($color, $font-weight) {
+  font-family: inherit;
+  font-size: 12px;
+  color: $color;
+  font-weight: $font-weight;
+
+  @include respond(tablet) {
+    font-size: 18px;
+  }
+
+  @include respond(tablet, landscape) {
+    font-size: 18px;
+  }
+
+  @include respond(desktop) {
+    font-size: 18px;
+  }
+}
+
+@mixin font-size-small($font-weight) {
+  font-family: inherit;
+  font-size: 16px;
+  color: #4f4f4f;
+  font-weight: $font-weight;
+  line-height: 1.5;
+}
+
+@mixin font-size-tiny($font-weight) {
+  font-family: inherit;
+  color: #828282;
+  font-size: 14px;
+  font-weight: $font-weight;
+}

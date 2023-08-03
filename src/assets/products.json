@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "../assets/imgs/product-2.png",
+    "type": "Full stack application",
+    "name": "Smart home dashboard"
+  },
+  {
+    "id": 2,
+    "img": "../assets/imgs/product-4.png",
+    "type": "Full stack application",
+    "name": "Smart home dashboard"
+  },
+  {
+    "id": 3,
+    "img": "../assets/imgs/product-1.png",
+    "type": "Full stack application",
+    "name": "Smart home dashboard"
+  },
+  {
+    "id": 3,
+    "img": "../assets/imgs/product-3.png",
+    "type": "Full stack application",
+    "name": "Smart home dashboard"
+  }
+]

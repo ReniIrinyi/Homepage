@@ -1,0 +1,43 @@
+@import "../../../styles.scss";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  & label {
+    @include font-size-tiny(500);
+    padding-bottom: 0.5rem;
+  }
+  & div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+
+    & .text {
+      @include button(#f2f2f2, #bdbdbd);
+      width: 101%;
+      height: 2.4rem;
+      padding: 0;
+    }
+
+    & .text::placeholder {
+      @include font-size-small-color(#bdbdbd, 500);
+      padding-left: 1rem;
+    }
+    & .submit {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      position: absolute;
+      @include button(#2d9cdb, #f2f2f2);
+      right: 0;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+
+    & .submit:hover {
+      @include button-hover-inverse;
+    }
+  }
+}

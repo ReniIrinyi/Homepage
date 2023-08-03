@@ -1,0 +1,134 @@
+@import "../../../styles.scss";
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #100e1d;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+  @include respond(small-phone) {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  @include respond(small-phone, landscape) {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  @include respond(medium-phone) {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+  @include respond(large-phone) {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  & a {
+    text-decoration: none;
+    transition: all 1s;
+    @include font-size-small-color(#fff, 400);
+  }
+
+  & li {
+    line-height: 200%;
+  }
+  & a:hover {
+    color: #828282;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    @include logo;
+    color: #fff;
+    padding-bottom: 0.5rem;
+  }
+  @include respond(small-phone) {
+    padding-top: 3rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding-top: 3rem;
+  }
+  @include respond(medium-phone) {
+    padding-top: 3rem;
+  }
+  @include respond(large-phone) {
+    padding-top: 3rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  & p {
+    @include font-size-tiny(400);
+    padding: 2rem;
+  }
+  @include respond(small-phone) {
+    padding-top: 3rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding-top: 3rem;
+  }
+  @include respond(medium-phone) {
+    padding-top: 3rem;
+  }
+  @include respond(large-phone) {
+    padding-top: 3rem;
+  }
+
+  & a {
+    @include font-size-tiny(500);
+    color: #fff;
+    text-decoration: none;
+    transition: all 1s;
+  }
+
+  & a:hover {
+    color: #828282;
+  }
+}
+
+app-form {
+  width: 17rem;
+  @include respond(small-phone) {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  @include respond(small-phone, landscape) {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  @include respond(medium-phone) {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  @include respond(large-phone) {
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+.share-buttons {
+  .svg {
+    color: #fff;
+    font-size: 24px;
+    transition: all 1s;
+  }
+  & a:not(:nth-of-type(1)) {
+    margin-left: 0.5rem;
+  }
+  & .svg:hover {
+    color: #828282;
+  }
+}

@@ -1,0 +1,120 @@
+@import "../../../styles.scss";
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 3rem 8rem 3rem;
+  @include respond(small-phone) {
+    padding: 3rem 0.5rem 4rem 0.5rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding: 3rem 0.5rem 4rem 0.5rem;
+  }
+  @include respond(medium-phone) {
+    padding: 3rem 0.5rem 4rem 0.5rem;
+  }
+  @include respond(large-phone) {
+    padding: 3rem 0.5rem 4rem 0.5rem;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  transform: translateX(40%);
+  @include respond(small-phone) {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  @include respond(small-phone, landscape) {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  @include respond(medium-phone) {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  @include respond(large-phone) {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  & p {
+    @include font-size-small-color(#2d9cdb, 400);
+  }
+
+  & h1 {
+    @include font-size-xxl;
+    line-height: 1.4;
+  }
+}
+
+.img-container {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  & img {
+    display: flex;
+    object-fit: contain;
+    border-radius: 18px;
+    width: 100%;
+    margin: 2rem 0;
+    @include respond(small-phone) {
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+    }
+    @include respond(small-phone, landscape) {
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+    }
+    @include respond(medium-phone) {
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+    }
+    @include respond(large-phone) {
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: translateX(40%);
+  @include respond(small-phone) {
+    width: 100%;
+    transform: translateX(10%);
+  }
+  @include respond(small-phone, landscape) {
+    width: 100%;
+    transform: translateX(10%);
+  }
+  @include respond(medium-phone) {
+    width: 100%;
+    transform: translateX(10%);
+  }
+  @include respond(large-phone) {
+    width: 100%;
+    transform: translateX(10%);
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  & h2 {
+    @include font-size-big;
+    line-height: 1.4;
+  }
+
+  & p {
+    @include font-size-small(400);
+    padding: 2.5rem 0;
+  }
+}
+
+app-form {
+  width: 100%;
+}

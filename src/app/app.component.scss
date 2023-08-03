@@ -1,0 +1,20 @@
+@import "../styles.scss";
+.container {
+  overflow: hidden;
+  position: relative;
+}
+.main {
+  padding: 10rem;
+  @include respond(small-phone) {
+    padding: 1rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding: 1rem;
+  }
+  @include respond(medium-phone) {
+    padding: 1rem;
+  }
+  @include respond(large-phone) {
+    padding: 1rem;
+  }
+}

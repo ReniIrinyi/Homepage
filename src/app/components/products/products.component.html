@@ -1,0 +1,11 @@
+<div class="products-container" id="products">
+  <h1>Good design means good business</h1>
+  <div class="products-content" id="products">
+    <div *ngFor="let product of products" class="product">
+      <img src="{{ product.img }}" alt="" />
+      <p>{{ product.type }}</p>
+      <h2>{{ product.name }}</h2>
+    </div>
+  </div>
+  <a class="link" href="#">see more &rarr;</a>
+</div>

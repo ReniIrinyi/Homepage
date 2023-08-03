@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "service": "UI/UX Design",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+  },
+  {
+    "id": 1,
+    "service": "Front End",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+  },
+  {
+    "id": 2,
+    "service": "Back End",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+  }
+]

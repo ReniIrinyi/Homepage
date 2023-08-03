@@ -1,0 +1,66 @@
+@import "../../../styles.scss";
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  @include respond(small-phone) {
+    padding-bottom: 3rem;
+  }
+  @include respond(small-phone, landscape) {
+    padding-bottom: 3rem;
+  }
+  @include respond(medium-phone) {
+    padding-bottom: 3rem;
+  }
+  @include respond(large-phone) {
+    padding-bottom: 3rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  @include respond(small-phone) {
+    width: 100%;
+  }
+  @include respond(small-phone, landscape) {
+    width: 100%;
+  }
+  @include respond(medium-phone) {
+    width: 100%;
+  }
+  @include respond(large-phone) {
+    width: 100%;
+  }
+
+  & blockquote {
+    @include font-size-big;
+    line-height: 1.4;
+  }
+}
+
+.customer-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  align-items: center;
+
+  & img {
+    width: 4rem;
+    border-radius: 8px;
+  }
+
+  & .text {
+    margin-left: 1.3rem;
+  }
+
+  & p:nth-of-type(1) {
+    @include font-size-medium(500);
+    margin-bottom: 1rem;
+  }
+  & p:nth-of-type(2) {
+    @include font-size-small-color(#828282, 500);
+  }
+}

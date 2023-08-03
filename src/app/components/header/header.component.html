@@ -1,0 +1,17 @@
+<div class="header-container">
+  <h1>Edie</h1>
+  <div class="links">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Our Works</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <fa-icon
+    (click)="changeIcon()"
+    *ngIf="isSmallScreen"
+    [icon]="currentIcon"
+  ></fa-icon>
+</div>
